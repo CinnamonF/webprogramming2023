@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>일본여행 가이드</title>
+  <link rel="stylesheet" href="styles.css">
+  <style type="text/css">
+    #pageTitle {
+      color: indianred;
+    }
+
+    #pageContent {
+      font-size: 16px;
+      transition: font-size 0.5s ease-in-out;
+    }
+
+    .rotated {
+      transform: rotate(180deg);
+    }
+
+    .image-container {
+      width: 400px;
+      height: 300px;
+      position: relative;
+    }
+
+    .image-container::before {
+      content: "안녕하세요";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="pageTitle">일본여행 가이드</h1>
+  <p id="pageContent">너도 할수있다!! 쉽고 간단한 일본여행!!</p>
+  <div class="image-container"></div>
+  <button id="changeFontSizeButton">글꼴 크기 변경</button>
+  <button id="rotateButton">회전</button>
+  <button id="changeImageButton">이미지 전환</button>
+  <a href="12312313.html">다음 페이지</a>
+  <script src="script.js"></script>
+</body>
+</html>
