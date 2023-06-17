@@ -1,24 +1,29 @@
-function changeFontSize() {
-  const pageContentElement = document.getElementById('pageContent');
-  const currentFontSize = parseInt(window.getComputedStyle(pageContentElement).fontSize);
-  const newFontSize = currentFontSize + 2;
-  pageContentElement.style.fontSize = newFontSize + 'px';
-}
+const images = ["Tower1.jpg", "Asakusa.jpg", "Atami.jpg"]; // 이미지 배열 선언
 
-function rotateElement() {
-  const pageTitleElement = document.getElementById('pageTitle');
-  pageTitleElement.classList.toggle('rotated');
-}
+const imageContainer = document.querySelector(".image-container");
+const changeImageButton = document.getElementById("changeImageButton");
+const screenshotImage1 = document.querySelector("img[src='Screenshot1.jpg']");
+const screenshotImage2 = document.querySelector("img[src='Screenshot2.jpg']");
 
-function changeImage() {
-  const imageElement = document.getElementById('image');
-  if (imageElement.src.endsWith('wolf.png')) {
-    imageElement.src = 'cat.png';
-  } else {
-    imageElement.src = 'wolf.png';
+let currentIndex = 0;
+
+changeImageButton.addEventListener("click", function() {
+  currentIndex = (currentIndex + 1) % images.length; // 배열의 길이를 활용하여 인덱스 순환
+
+  const imageUrl = images[currentIndex];
+  const imageElement = document.createElement("img");
+  imageElement.src = imageUrl;
+  imageElement.alt = "Tower image";
+  imageElement.style.width = "350px";
+  imageElement.style.height = "350px";
+
+  while (imageContainer.firstChild) {
+    imageContainer.firstChild.remove();
   }
-}
 
-document.getElementById('changeFontSizeButton').addEventListener('click', changeFontSize);
-document.getElementById('rotateButton').addEventListener('click', rotateElement);
-document.getElementById('changeImageButton').addEventListener('click', changeImage);
+  imageContainer.appendChild(imageElement);
+});
+
+function goToSite(url) {
+  window.location.href = url; // 링크 주소로 이동
+}
