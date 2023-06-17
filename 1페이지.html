@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>일본여행 가이드</title>
+  <title>도쿄 관광지</title>
   <link rel="stylesheet" href="styles.css">
-  <style type="text/css">
-    #pageTitle {
-      color: indianred;
-    }
-
-    #pageContent {
-      font-size: 16px;
-      transition: font-size 0.5s ease-in-out;
-    }
-
-    .rotated {
-      transform: rotate(180deg);
-    }
-  </style>
 </head>
 <body>
-  <h1 id="pageTitle">도쿄여행 가이드</h1>
-  <p id="pageContent">일본의 대표적인 수도 도쿄</p>
-<div class="image-container">
-  <img src="Tower.jpg" alt="Tower 이미지" style="width: 350px; height: 350px;">
-</div>
-  <button id="changeFontSizeButton">글꼴 크기 변경</button>
-  <button id="rotateButton">회전</button>
+  <h1 id="pageTitle" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">도쿄 관광지</h1>
+  <div class="image-container" style="margin-top: 10em;">
+    <img src="Tower1.jpg" alt="Tower image" style="width: 350px; height: 350px;">
+    </div>
   <button id="changeImageButton">이미지 전환</button>
-  <a href="12312313.html">다음 페이지</a>
+  <hr> <!-- 추가된 수평선 -->
+  <p style="font-size: 30px;">도쿄를 2배로 즐기는 도쿄 관광</p>
+  <p>도쿄, 일본의 아름다운 수도<br>
+  모던한 도시와 전통이 어우러진 곳<br>
+  다채롭고 활기찬 도쿄의 매력
+  당신을 초대합니다, 도쿄로 떠나보세요!</p>
+  <img src="Screenshot1.jpg" alt="Screenshot image" style="width: 350px; height: 350px; margin-top: 1em;" onclick="goToSite('https://transit.yahoo.co.jp/')">
+  <img src="Screenshot2.jpg" alt="Screenshot image" style="width: 350px; height: 350px; margin-top: 1em;" onclick="goToSite('https://example.com/')">
+  <p>일본에서 자주 사용되는 지하철 검색 사이트 (첫번째 이미지를 클릭하면 해당 사이트로 이동합니다)</p>
+  <p>기존의 구글 지도와는 다르게 다양한 경로 검색가능</p>
+  <img src="Park.jpg" alt="Park image" style="width: 350px; height: 350px; margin-top: 1em;">
+  <p style="font-size: 30px;">도쿄 디즈니랜드</p>
+  <p>도쿄 디즈니랜드는 일본에서 가장 유명한 테마파크 중 하나로, 환상적인 모험과 꿈의 세계를 만나는 곳입니다.<br>
+  디즈니 캐릭터들과 함께하는 다양한 애니메이션 스토리, 흥미진진한 놀이기구, 아름다운 성과 정교한 무대공연으로 채워진 이곳은 어린이뿐만 아니라 어른들에게도 끊임없는 즐거움을 선사합니다. <br>
+  도쿄 디즈니랜드에서는 마법의 순간을 만끽하며, 디즈니 월드의 환상적인 여행을 경험할 수 있습니다.</p>
+ <p><a href="https://www.tokyodisneyresort.jp/kr/tdl/">홈페이지</a></p><p><a href="https://reserve.tokyodisneyresort.jp/en/?_gl=1*1xqc5u8*_gcl_au*MTkxOTA3ODIwMC4xNjg2OTAzNDI1*_ga*MTc5OTUzNTgwOS4xNjg2OTAzNDI2*_ga_CW1JLMP4BH*MTY4Njk5NzMwOS4yLjEuMTY4Njk5OTA5OC42MC4wLjA.">티켓 예매 사이트</a></p>
+ <img src="Cat.jpg" alt="Cat image" style="width: 350px; height: 350px; margin-top: 1em;">
+  <p style="font-size: 30px;">신주쿠역 동쪽출구의 삼색고양이</p>
+  <p>신주쿠역 동쪽출구에 위치한 3D 전광판은 놀라운 시각적 경험을 선사하는 명소입니다. <br>
+  이 전광판은 현실감 넘치는 3차원 영상을 투사하여 도시의 활기와 화려한 색상으로 밝게 빛납니다.<br> 
+  특히 이 곳은 알려진 삼색고양이의 이미지로 유명하며, 그 고양이의 귀여운 모습이 전광판을 통해 현실과 상상의 경계를 허무는 아름다움을 선사합니다. <br>
+  신주쿠역 동쪽출구의 3D 전광판은 도쿄의 도시 생활과 예술적인 요소가 어우러져 독특하고 매력적인 명소로 알려져있습니다.</p>
+   <p><a href="https://goo.gl/maps/X5mFwJyL55zUwkzSA">지도</a></p>
+   <img src="Pineapple.jpg" alt="Pineapple image" style="width: 350px; height: 350px; margin-top: 1em;">
+   <p style="font-size: 30px;">도쿄도에 위치한 파인애플라멘</p>
+   <p>도쿄 주요 번화가에서 떨어져있지만 마치다라는 지역 근처에 위치한 파인애플 라면은 독특한 맛으로 유명한 라면 가게입니다.<br>
+    이 가게에서는 파인애플을 주 재료로 사용하여 고유의 상큼하고 달콤한 맛을 즐길 수 있습니다. <br>
+  라면의 면은 탄탄하고 쫄깃하며, 파인애플의 향과 함께 조화롭게 어우러져 특별한 맛을 선사합니다. <br>
+파인애플 라면은 도쿄에서 맛있는 음식을 찾는 이들에게 추천하는 식당 중 하나로 손꼽히며, 독특한 조합으로 인해 많은 이들의 입맛을 사로잡고 있습니다. <br>
+마치다 근처 파인애플 라면은 일본 음식 문화의 다양성을 경험하고자 하는 이들에게 특별한 맛의 여행을 선사합니다.</p>
+   <p><a href="https://goo.gl/maps/8SxuP9qZxeHEpKRN6">지도</a></p>
+   <p style="font-size: 30px;">도쿄에서 유명한 우동</p>
+   <img src="udon.jpg" alt="udon image" style="width: 350px; height: 350px; margin-top: 1em;">
+   <p>우동 가게는 일본의 대표적인 음식 중 하나로, 그 맛과 특색으로 유명합니다.<br>
+    이 가게는 신선한 우동 면과 풍부한 국물을 제공하여 손님들에게 훌륭한 식사 경험을 선사합니다.<br>
+  일본의 우동 가게는 지역 특산물과 신선한 재료를 사용하여 만든 우수한 음식을 제공하며, 일본 음식 문화를 경험하고자 하는 이들에게는 놓칠 수 없는 장소입니다.<br>
+  <p><a href="https://goo.gl/maps/WT1cd92177eSSPuKA">지도</a></p>
   <script src="script.js"></script>
 </body>
 </html>
